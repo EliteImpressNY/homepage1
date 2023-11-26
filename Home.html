@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- This website template was created by: Isabel Otero -->
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/Styles.css">
+	<title>Elite Impressions NY</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+
+<body>
+	<div id = "container">
+	
+	<header>
+		<a href="Home.html"><img src="Images/Elite_Logo.png" alt="Elite Impressons Logo" height="300px" width="1600px"></a> &nbsp; &nbsp;
+		<br>
+		<br>
+		
+
+		<h2>Digital and Print Media</h2>
+	</header>
+
+		<br>
+	
+	<!-- Use this nav area to add hyperlinks to either pages within the website -->
+	<nav>
+	  	<a href="Home.html">Home</a> &nbsp; &nbsp;
+	  	<a href="Services.html">Services</a> &nbsp; &nbsp;
+	  	<a href="ProjectGallery.html">Project Gallery</a> &nbsp; &nbsp;
+	  	<a href="Contact.html">Contact</a> &nbsp; &nbsp;
+	</nav>
+	</div>
+	
+	
+	<main>	
+	
+	
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="Images/Dog_Mug.jpeg"  style="width:50%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="Images/Table_Fotor.jpg" style="width:50%">
+
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="Images/Bags_Fotor.jpg" style="width:50%">
+  
+</div>
+
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+<br>
+
+		
+		<h3>Unique Custom Printed & Crafted Pieces</h3>
+		
+		
+		
+		
+	</main>
+	<br>
+	<br>
+	<br>
+	<hr>
+	<br>
+	
+	<!-- Use the footer area to add webpage footer content -->
+	<footer>	
+		   <p>ELITE IMPRESSIONS NY <br>
+		&copy; Copyright 2018. All Rights Reserved By Elite Impressions NY.<br>
+		<a href="www.eliteimpressionsny.com">www.eliteimpressionsny.com</a>
+	</footer>
+	
+</body>
+</html>
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
